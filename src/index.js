@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import { DatePicker } from 'antd';
+import './component/a'
+import './css/view.scss'
 
 export default class App extends Component {
     render() {
-        return <div>Hello React121!</div>;
+        return <div className="aaa">Hello React1221! 
+            <div className="bbb">
+                asdasda
+            </div>
+            <DatePicker />
+            </div>;
     }
 }
