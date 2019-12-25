@@ -12,10 +12,12 @@ export default class App extends Component {
     }
 
     render() {
-        console.log('this.props.children', this.props.children)
         return <div className="self-resume-com">
-                <Sider />
-                <div className="container">12313123{this.props.children}</div>
+                <div className="header">Web前端开发工程师<span className="tips">技术源于交流</span></div>
+                <div className="com-container">
+                    <Sider />
+                    <div className="container">{this.props.children}</div>
+                </div>
               </div>
     }
 }

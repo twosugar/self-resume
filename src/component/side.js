@@ -1,21 +1,44 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'antd';
-import { HashRouter, Route, Switch, Redirect, Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export default class Sider extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        tabList: [
+          { key: 1, title: '个人资料', toLink: '/' },
+          { key: 'personInfo', title: '工作经历', toLink: '/personInfo' }
+        ],
+        defaultSelectedKeys: this.getCurrentKey() || []
+      }
+      
+    }
+
+    getCurrentKey() {
+      const hash = window.location.hash;
+      let key = '1';
+      hash && hash.replace(/^\#\/(\w*)([\?])?/g, (a, b) => {
+        if (b) {
+          key = b;
+        }
+      })
+      return key && [key]
+    }
+
     render() {
-        return <div>
+      const { tabList, defaultSelectedKeys } = this.state;
+      return <div>
                 <Menu
                   style={{ width: 256 }}
-                  defaultSelectedKeys={['1']}
-                  defaultOpenKeys={['sub1']}
+                  defaultSelectedKeys={defaultSelectedKeys}
                 >
-                  <Menu.Item key="1">
-                    <Link to="/">Navigation One</Link>
-                  </Menu.Item>
-                  <Menu.Item key="2">
-                   
-                    <Link to="about">22222</Link>
-                  </Menu.Item>
+                  {
+                    tabList && tabList.length ? tabList.map(item => {
+                      return  <Menu.Item key={item.key}>
+                                <Link to={item.toLink}>{item.title}</Link>
+                              </Menu.Item>
+                    }) : null
+                  }
                 </Menu>
               </div>
     }

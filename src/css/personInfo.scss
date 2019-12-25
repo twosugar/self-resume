@@ -1,0 +1,38 @@
+.container-person-info {
+  box-sizing: border-box;
+  padding: 20px 40px;
+
+  .person-info-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+
+    .name {
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    .position {
+      font-size: 18px;
+    }
+  }
+
+  .person-info-container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 20px;
+    line-height: 34px;
+
+    .right {
+      text-align: right;
+    }
+
+    a {
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+}
