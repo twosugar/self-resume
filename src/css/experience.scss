@@ -1,0 +1,22 @@
+.container-experience {
+  box-sizing: border-box;
+  padding: 20px 40px;
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  .item-head {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item-experiene-desc {
+    margin: 10px 0 5px 0;
+  }
+
+  .work-row {
+    line-height: 30px;
+  }
+}

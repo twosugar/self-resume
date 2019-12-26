@@ -1,7 +1,20 @@
 @import './personInfo.scss';
+@import './experience.scss';
+@import './skill.scss';
+
 p,a {
   margin: 0;
   padding: 0;
+}
+
+.self-resume-tips-box {
+  max-height: 150px;
+  max-width: 150px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .iconfont{
@@ -13,10 +26,11 @@ p,a {
 }
 
 .self-resume-com {
+  user-select: none;
   height: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 
   .header {
     width: 100%;
@@ -41,6 +55,7 @@ p,a {
 
     .container {
       flex: 1;
+      overflow: auto;
     }
   }
 }
