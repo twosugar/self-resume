@@ -6,7 +6,7 @@ export default class Sider extends Component {
       super(props);
       this.state = {
         tabList: [
-          { key: 'personInfo', title: '个人资料', toLink: '/personInfo' },
+          { key: 'personInfo', title: '个人资料', toLink: '/' },
           { key: 'experience', title: '工作经历', toLink: '/experience' },
           { key: 'skill', title: '技能', toLink: '/skill' },
           { key: 'pro', title: '项目经历', toLink: '/pro' }

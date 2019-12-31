@@ -7,16 +7,15 @@ export default class Experience extends Component {
   }
 
   render() {
-    const { containerRender, title } = this.props;
     
     return <div className="container-experience">
               {
-                experList && experList.length ? experList.map(item => {
-                  return <div className="item">
+                experList && experList.length ? experList.map((item, index) => {
+                  return <div className="item" key={index}>
                           <div className="item-head">
                             {
-                              item.headerList && item.headerList.length ? item.headerList.map(it => {
-                                return <span>{it}</span>
+                              item.headerList && item.headerList.length ? item.headerList.map((it, i) => {
+                                return <span key={i}>{it}</span>
                               }) : null
                             }
                           </div>
@@ -24,7 +23,7 @@ export default class Experience extends Component {
                             <p className="item-experiene-desc">工作描述：</p>
                             {
                               item.workList && item.workList.length ? item.workList.map((row, i) => {
-                                return <p className="work-row">{i + 1}. {row}</p>
+                                return <p className="work-row" key={i}>{i + 1}. {row}</p>
                               }) : null
                             }
                           </div>
