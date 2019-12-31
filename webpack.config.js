@@ -1,4 +1,5 @@
 let path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   module: {
@@ -33,5 +34,11 @@ module.exports = {
   output: {
         filename: "bundle.js",//打包后的文件名
         path: path.resolve('./dist') //打包后文件的路径
-  }
+  },
+
+  plugins: [
+    new webpack.DllReferencePlugin({
+      manifest: require('./dist/vendor-manifest.json')
+    })
+  ]
 };

@@ -87,6 +87,46 @@ module.exports = {
 };
 
 ```
+### 打包优化,防止bundle.js太大
+新建webpack.dll.config.js
+```
+const path = require('path');
+const webpack = require('webpack');
+
+module.exports = {
+  entry: {
+      vendor: ['react-router', 'react-router-dom', 'react']
+  },
+
+  output: {
+    path: path.resolve('./dist'),
+    filename: '[name].dll.js',
+    library: '[name]_library'
+  },
+
+  plugins: [
+    new webpack.DllPlugin({
+      path: path.resolve('./dist', '[name]-manifest.json'),
+      name: '[name]_library'
+    })
+  ]
+};
+```
+webpack.config.js配置新增
+```
+plugins: [
+    new webpack.DllReferencePlugin({
+      manifest: require('./dist/vendor-manifest.json')
+    })
+  ]
+```
+package.json
+```
+"build:dll": "webpack --mode development --config webpack.dll.config.js"
+```
+先npm run build:dll， 生成vendor.dll.js，再npm run build
+
+index.html 先引入vendor.dll.js， 再引入bundle.js
 ### 其他
 dist目录下新建index.html
 ```
