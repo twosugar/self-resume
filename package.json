@@ -2,7 +2,8 @@
   "name": "self-resume",
   "version": "1.0.0",
   "description": "基于react的个人简历",
-  "main": "index.js",
+  "main": "dist/bundle.js",
+  "readmeFilename": "README.md",
   "dependencies": {
     "antd": "^3.26.2",
     "react-router": "^5.1.2",

@@ -1,0 +1,18 @@
+POST http://dummy.restapiexample.com/api/v1/create HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Hendry",
+    "salary":"61888",
+    "age":"26"
+}
+
+###
+curl -X POST "http://dummy.restapiexample.com/api/v1/create" -d "Hello World"
+
+###
+curl -X POST "https://analytics.getpostman.com/events"
+content-type: application/json
+
+###
+curl -X GET "https://4d83f116-ba72-44a1-86d7-c53391c71e74.mock.pstmn.io/events"
