@@ -13,19 +13,17 @@ export default class Skill extends Component {
             3. 熟练使用前端主流框架，并有相关项目经验：<br/>
             ○ <a>React</a> + Antd + React-Router；<br/>
             ○ Vue + VueX + VueRouter；<br/>
-            4. 熟悉模块化(amd、commonjs)、前端工程化及构建工具(webpack)；能熟练使用Git版本管理工具；熟练使用 Sass，Less 预编译工具；<br/>
+            4. 熟悉前端工程化及构建工具(webpack)；能熟练使用Git版本管理工具；熟练使用 Sass，Less 预编译工具；<br/>
             5. 熟练使用响应式布局、弹性布局，能够利用 HTML5 配合 CSS3 开发 WebApp 并进行各终端的适配；<br/>
-            6. 能熟练运用jquery，zepto等相关类库以及iscroll，swiper等插件，对线上各种UI框架都有所了解；<br/>
-            7. 热爱前端学习,日常工作中经常使用es6/promise，能熟练使用css3，Animate.css等技术来制作页面的动效和动图；<br/>
-            8. 熟悉组件化，模块化的开发方式，<a>能熟练封装多种通用组件或方法</a>；<br/>
-            9. 参与开发过<a>微信小程序</a>；<br/>
-            10. 热衷于前端性能优化，熟悉许多前端优化方案；<br/>
-            11. 使用rax进行<a>weex</a>开发；<br/>
-            12. 搭建过自己的博客网站；<br/>
-            13. <a href="https://github.com/twosugar/Gra" target="_blank">掌握canvas开发</a><br/>
-            14. <a href="https://github.com/twosugar/website-QR-code" target="_blank">掌握Chrome扩展开发</a>；<br/>
-            15. 时常使用es-lint约束自己的代码规范；<br/>
-            16. 熟悉图表G2/bizChart/eCharts
+            6. 热爱前端学习，熟练使用promise及其语法糖（async await）喜欢研究新技术如es6、es7、mocha、yeoman；热衷于前端性能优化，熟悉前端优化方案；熟悉组件化，模块化的开发方式，能熟练封装多种通用组件或方法；<br/>
+            7. 熟悉组件化，模块化的开发方式，<a>能熟练封装多种通用组件或方法</a>；<br/>
+            8. 参与开发过<a>微信小程序</a>；<br/>
+            9. 热衷于前端性能优化，熟悉前端优化方案；<br/>
+            10. 使用rax进行<a>weex</a>开发；<br/>
+            11. 搭建过自己的博客网站；<br/>
+            12. 有大屏数据可视化项目开发经验以及threejs接入经验；<br/>
+            13. 时常使用es-lint约束自己的代码规范；<br/>
+            14. 熟悉图表G2/bizChart/eCharts
            </div>
   }
 }
