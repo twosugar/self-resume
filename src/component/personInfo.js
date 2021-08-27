@@ -16,6 +16,8 @@ export default class PersonInfo extends Component {
     }
 
     render() {
+        const time = new Date().getTime() - new Date('2018-07-01').getTime()
+        const year = 365 * 24 * 60 * 60 * 1000
         return <div className="container-person-info">
                 <div className="person-info-head">
                   <div className="name">唐瑜</div>
@@ -24,7 +26,7 @@ export default class PersonInfo extends Component {
                 <div className="person-info-container">
                   <div className="left">
                     <p>男/1996.08</p>
-                    <p>工作经验3年</p>
+                    <p>工作经验{Math.round(time / year)}年</p>
                     <a href="https://www.swpu.edu.cn/" target="_blank">西南石油大学/计算机科学学院</a>
                     <p>本科</p>
                   </div>
