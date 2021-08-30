@@ -1,4 +1,4 @@
-基于react，实现在线个人简历，并部署到服务器，地址：[www.sugarfish.top](http://www.sugarfish.top)
+基于react，实现在线个人简历，并部署到服务器，地址：[www.sugarfish.top:8084](http://www.sugarfish.top:8084)
 ### 安装webpack webpack-cli
 本项目使用的是webpack4
 
